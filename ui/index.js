@@ -58,3 +58,12 @@ export { default as ToolGroup } from './ToolGroup'
 export { default as ToolPanel } from './ToolPanel'
 export { default as UnsupportedNodeComponent } from './UnsupportedNodeComponent'
 export { default as VirtualElement } from './VirtualElement'
+
+// these are in packages, but actually are so core'ish that we export them
+// here
+export { default as Button } from '../packages/button/Button'
+export { default as Layout } from '../packages/layout/Layout'
+export { default as ScrollPane } from '../packages/scroll-pane/ScrollPane'
+export { default as TOC } from '../packages/toc/TOC'
+export { default as TOCProvider } from '../packages/toc/TOCProvider'
+export { default as Toolbar } from '../packages/toolbar/Toolbar'

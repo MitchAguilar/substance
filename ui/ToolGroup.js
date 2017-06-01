@@ -77,9 +77,12 @@ class ToolGroup extends Component {
     let commandGroups = this.context.commandGroups
     let filteredCommandStates = {} // command states objects of that group
     this.props.commandGroups.forEach((commandGroup) => {
-      commandGroups[commandGroup].forEach((commandName) => {
-        filteredCommandStates[commandName] = commandStates[commandName]
-      })
+      const commandNames = commandGroups[commandGroup]
+      if (commandNames) {
+        commandNames.forEach((commandName) => {
+          filteredCommandStates[commandName] = commandStates[commandName]
+        })
+      }
     })
     return filteredCommandStates
   }
